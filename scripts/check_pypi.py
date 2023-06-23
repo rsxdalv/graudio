@@ -7,7 +7,7 @@ root_directory = Path(__file__).parent.parent
 version = (root_directory /  "gradio" / "version.txt").read_text(
     encoding='utf8').strip()
 
-with urllib.request.urlopen("https://pypi.org/pypi/gradio/json") as url:
+with urllib.request.urlopen("https://pypi.org/pypi/graudio/json") as url:
     releases = json.load(url)["releases"]
 
 if version in releases:
